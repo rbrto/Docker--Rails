@@ -4,7 +4,11 @@ Docker image for PostgreSQL
 
 **Get it running:**
 
-``$ docker-compose up -d ``
+``$ docker-compose up ``
+
+**Run Migrations:**
+
+``$ docker-compose run --rm web rake db:migrate ``
 
 **Testing the running PostgreSQL**
 
