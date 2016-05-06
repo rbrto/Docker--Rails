@@ -1,0 +1,14 @@
+// como base la imagen ruby
+FROM ruby   
+//actualizo dependencias 
+RUN apt-get update -qq && apt-get install -y build-essential libpq-dev
+// creamos una carpeta como directorio principal
+RUN mkdir /myapp
+// le decimos que sera el directorio de rabajo
+WORKDIR /myapp
+// añado un archivo gemfile a la carpeta dentro el contenedor
+ADD Gemfile /myapp/Gemfile
+// ejecuto el comando como en la shel 
+RUN bundle install
+// añado todo lo que esta en el directorio actual a mi carpeta en el contenedor
+ADD . /myapp

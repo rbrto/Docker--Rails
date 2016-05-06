@@ -1,0 +1,23 @@
+dbdata:
+  build: postgresql-docker/
+  volumes:
+    - /var/lib/postgresql
+  command: "true"
+
+db:
+  build: postgresql-docker/
+  volumes_from:
+    - dbdata
+  ports:
+    - "5432:5432"
+
+web:
+  build: .
+  command: bundle exec rackup -p 3000
+  volumes:
+    - .:/myapp
+  ports:
+    - "3000:3000"
+  links:
+    - db
+

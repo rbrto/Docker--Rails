@@ -1,0 +1,3058 @@
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-10 22:26:59 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 30ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (19.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.8ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHighScores (20151010223630)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "high_scores" ("id" serial primary key, "game" character varying(255), "score" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151010223630"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "high_scores"[0m
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-10 22:43:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 31ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-10 22:46:38 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.8ms)
+Completed 200 OK in 32ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 22:46:48 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.7ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 675ms (Views: 664.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 22:46:49 +0000
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2015-10-10 22:46:54 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (45.6ms)
+  Rendered high_scores/new.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 140ms (Views: 137.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2015-10-10 23:03:55 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (3.1ms)
+  Rendered high_scores/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 23:03:55 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 23:03:55 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 23:03:55 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 23:03:55 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 23:03:55 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 23:03:55 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 23:03:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 23:03:56 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 23:03:58 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.4ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.4ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 44.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 23:04:00 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 23:14:44 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.8ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 455ms (Views: 430.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 23:14:45 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 23:14:45 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 23:14:45 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 23:14:46 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 23:14:46 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 23:14:46 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 23:14:46 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 23:14:46 +0000
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-10 23:19:15 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-10 23:19:31 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-10 23:19:41 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-10 23:32:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 23:35:52 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.6ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 218ms (Views: 208.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 23:35:52 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 23:35:52 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 23:35:52 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 23:35:53 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 23:35:53 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 23:35:53 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 23:35:53 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 23:35:53 +0000
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2015-10-10 23:35:55 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (49.9ms)
+  Rendered high_scores/new.html.erb within layouts/application (68.9ms)
+Completed 200 OK in 142ms (Views: 139.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/high_scores" for 192.168.99.1 at 2015-10-10 23:36:03 +0000
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO+cnHEPeBT1Ugnxe6rMqJ3lgyjv1jUyVQLJqetUgKw=", "high_score"=>{"game"=>"ff", "score"=>"2"}, "commit"=>"Create High score"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.6ms)[0m  INSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 10 Oct 2015 23:36:03 UTC +00:00], ["game", "ff"], ["score", 2], ["updated_at", Sat, 10 Oct 2015 23:36:03 UTC +00:00]]
+  [1m[36m (8.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.99.100:3000/high_scores/1
+Completed 302 Found in 24ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/high_scores/1" for 192.168.99.1 at 2015-10-10 23:36:03 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mHighScore Load (0.8ms)[0m  SELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered high_scores/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 82ms (Views: 78.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 23:36:04 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 23:36:07 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.4ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 98ms (Views: 97.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/high_scores/1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+Processing by HighScoresController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tO+cnHEPeBT1Ugnxe6rMqJ3lgyjv1jUyVQLJqetUgKw=", "id"=>"1"}
+  [1m[35mHighScore Load (0.6ms)[0m  SELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM "high_scores" WHERE "high_scores"."id" = $1  [["id", 1]]
+  [1m[36m (15.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.99.100:3000/high_scores
+Completed 302 Found in 22ms (ActiveRecord: 17.5ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.4ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:06 +0000
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2015-10-10 23:37:10 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (2.2ms)
+  Rendered high_scores/new.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/high_scores" for 192.168.99.1 at 2015-10-10 23:37:16 +0000
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tO+cnHEPeBT1Ugnxe6rMqJ3lgyjv1jUyVQLJqetUgKw=", "high_score"=>{"game"=>"uuu", "score"=>"2"}, "commit"=>"Create High score"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 10 Oct 2015 23:37:16 UTC +00:00], ["game", "uuu"], ["score", 2], ["updated_at", Sat, 10 Oct 2015 23:37:16 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.99.100:3000/high_scores/2
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/high_scores/2" for 192.168.99.1 at 2015-10-10 23:37:17 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mHighScore Load (0.5ms)[0m  SELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1  [["id", "2"]]
+  Rendered high_scores/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:17 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-10 23:37:17 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:17 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:17 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-10 23:37:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-10 23:37:17 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-10 23:37:18 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-10 23:37:20 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.4ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 192.168.99.1 at 2015-10-11 00:27:57 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (3.6ms)
+Completed 200 OK in 30ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2015-10-11 00:28:05 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.7ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 242ms (Views: 215.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2015-10-11 00:28:06 +0000
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 00:18:42 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.3ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:07:26 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.3ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:07:42 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.1ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:07:56 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (38.9ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:07:57 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.1ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:07:57 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5.000 seconds (waited 5.002 seconds)):
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block in wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `loop'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:136:in `block in poll'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:146:in `synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:134:in `poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:423:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.2ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:08:02 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5.000 seconds (waited 5.002 seconds)):
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block in wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `loop'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:136:in `block in poll'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:146:in `synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:134:in `poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:423:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.5ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:08:07 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5.000 seconds (waited 5.001 seconds)):
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block in wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `loop'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:136:in `block in poll'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:146:in `synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:134:in `poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:423:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.8ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:08:13 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5.000 seconds (waited 5.001 seconds)):
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block in wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `loop'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:136:in `block in poll'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:146:in `synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:134:in `poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:423:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.5ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:08:18 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5.000 seconds (waited 5.000 seconds)):
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block in wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `loop'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:136:in `block in poll'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:146:in `synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:134:in `poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:423:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.4ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:08:57 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5.000 seconds (waited 5.000 seconds)):
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block in wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `loop'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:136:in `block in poll'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:146:in `synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:134:in `poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:423:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:09:26 +0000
+
+ActiveRecord::ConnectionTimeoutError (could not obtain a database connection within 5.000 seconds (waited 5.000 seconds)):
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:190:in `block in wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `loop'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `wait_poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:136:in `block in poll'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:146:in `synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:134:in `poll'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:423:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__893344258599890716__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.6ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:15:40 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__892795992992763536__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (12.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHighScores (20151010223630)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (16.1ms)[0m  [1mCREATE TABLE "high_scores" ("id" serial primary key, "game" character varying(255), "score" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151010223630"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-24 01:19:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 66ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 16:07:19 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4207946568564632617__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 16:07:30 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__4207946568564632617__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (12.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHighScores (20151010223630)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.8ms)[0m  [1mCREATE TABLE "high_scores" ("id" serial primary key, "game" character varying(255), "score" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151010223630"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 16:08:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 18ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 16:27:11 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 16:27:11 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/highscores" for 192.168.99.1 at 2016-02-27 16:46:44 +0000
+
+ActionController::RoutingError (No route matches [GET] "/highscores"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.7ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 16:47:45 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.6ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 290ms (Views: 230.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 16:47:55 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 16:48:05 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 16:48:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:06 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 16:48:06 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.4ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:16 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:16 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 16:48:16 +0000
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 20:06:03 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3396945928377613868__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 20:12:55 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__549296841828174026__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.9ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 20:13:00 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__549296841828174026__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.6ms)
+  [1m[36m (278.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (86.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHighScores (20151010223630)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.3ms)[0m  [1mCREATE TABLE "high_scores" ("id" serial primary key, "game" character varying(255), "score" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151010223630"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-27 20:13:24 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
+Completed 200 OK in 33ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 20:24:11 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.7ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 218ms (Views: 209.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 20:24:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:12 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 20:24:12 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 20:24:12 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:13 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:13 +0000
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2016-02-27 20:24:14 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (112.8ms)
+  Rendered high_scores/new.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 206ms (Views: 203.1ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/high_scores" for 192.168.99.1 at 2016-02-27 20:24:20 +0000
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ITvHvzXc/lOCacuQN+6N10M301CdmGAUoDPPZI1qGoc=", "high_score"=>{"game"=>"ioioi", "score"=>"89"}, "commit"=>"Create High score"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (52.3ms)[0m  INSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 27 Feb 2016 20:24:20 UTC +00:00], ["game", "ioioi"], ["score", 89], ["updated_at", Sat, 27 Feb 2016 20:24:20 UTC +00:00]]
+  [1m[36m (17.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://192.168.99.100:3000/high_scores/1
+Completed 302 Found in 75ms (ActiveRecord: 70.0ms)
+
+
+Started GET "/high_scores/1" for 192.168.99.1 at 2016-02-27 20:24:20 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mHighScore Load (1.1ms)[0m  SELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered high_scores/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 20:24:21 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 20:24:25 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.5ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 68ms (Views: 67.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 20:46:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.6ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 218ms (Views: 196.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:01 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:01 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:01 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:01 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:01 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:02 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:02 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:02 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.5ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 45ms (Views: 44.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:04 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.5ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:07 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 20:46:10 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.4ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 20:46:12 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:02:32 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.6ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 99ms (Views: 97.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:33 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.5ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:34 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:02:39 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.5ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 77ms (Views: 76.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:37 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:42 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.5ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 87ms (Views: 85.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:05:56 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.5ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 44ms (Views: 43.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:06:12 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:06:17 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:07:15 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__686676234620349564__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:07:21 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__686676234620349564__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:09:56 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__686676234620349564__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.1ms)
+  [1m[36m (18.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (19.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHighScores (20151010223630)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.6ms)[0m  [1mCREATE TABLE "high_scores" ("id" serial primary key, "game" character varying(255), "score" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151010223630"]]
+  [1m[36m (0.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:13:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.6ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 259ms (Views: 238.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:13:37 +0000
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2016-02-27 21:13:44 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (36.5ms)
+  Rendered high_scores/new.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 165ms (Views: 162.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:27:08 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (10.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (17.6ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 283ms (Views: 243.7ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:10 +0000
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2016-02-27 21:27:19 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (63.4ms)
+  Rendered high_scores/new.html.erb within layouts/application (103.7ms)
+Completed 200 OK in 192ms (Views: 189.1ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/high_scores" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vr34O8ljaWR3xQh+E8ZZKb7y7z3C/wiFevEf4mNLwbk=", "high_score"=>{"game"=>"dsdsd", "score"=>"56"}, "commit"=>"Create High score"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (43.3ms)[0m  INSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 27 Feb 2016 21:27:24 UTC +00:00], ["game", "dsdsd"], ["score", 56], ["updated_at", Sat, 27 Feb 2016 21:27:24 UTC +00:00]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://dockerhost:3000/high_scores/1
+Completed 302 Found in 49ms (ActiveRecord: 44.5ms)
+
+
+Started GET "/high_scores/1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mHighScore Load (0.8ms)[0m  SELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered high_scores/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:24 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:27:26 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.5ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2016-02-27 21:27:28 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (2.0ms)
+  Rendered high_scores/new.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/high_scores" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vr34O8ljaWR3xQh+E8ZZKb7y7z3C/wiFevEf4mNLwbk=", "high_score"=>{"game"=>"ewewe", "score"=>"56"}, "commit"=>"Create High score"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 27 Feb 2016 21:27:32 UTC +00:00], ["game", "ewewe"], ["score", 56], ["updated_at", Sat, 27 Feb 2016 21:27:32 UTC +00:00]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://dockerhost:3000/high_scores/2
+Completed 302 Found in 5ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/high_scores/2" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHighScore Load (0.4ms)[0m  [1mSELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1[0m  [["id", "2"]]
+  Rendered high_scores/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:27:32 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:27:36 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.5ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 21:33:13 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (22.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (14.4ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 303ms (Views: 263.9ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 21:33:15 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 23:20:10 +0000
+Processing by HighScoresController#index as HTML
+  [1m[36mHighScore Load (0.5ms)[0m  [1mSELECT "high_scores".* FROM "high_scores"[0m
+  Rendered high_scores/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 23:20:11 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 23:20:11 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 23:20:11 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 23:20:11 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 23:20:11 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 23:20:14 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 23:20:16 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 23:20:17 +0000
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 23:35:08 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.5ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-27 23:35:08 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-27 23:35:08 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-27 23:35:08 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-27 23:35:08 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-27 23:35:08 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-27 23:35:08 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-27 23:35:09 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-27 23:35:09 +0000
+
+
+Started GET "/high_scores/1" for 192.168.99.1 at 2016-02-27 23:35:10 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHighScore Load (1.1ms)[0m  [1mSELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered high_scores/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 100ms (Views: 96.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/high_scores/1/edit" for 192.168.99.1 at 2016-02-27 23:35:11 +0000
+Processing by HighScoresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mHighScore Load (0.6ms)[0m  SELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered high_scores/_form.html.erb (73.0ms)
+  Rendered high_scores/edit.html.erb within layouts/application (139.0ms)
+Completed 200 OK in 187ms (Views: 185.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/high_scores/1" for 192.168.99.1 at 2016-02-27 23:35:14 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHighScore Load (0.5ms)[0m  [1mSELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered high_scores/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 45.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-27 23:35:16 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.5ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-28 00:10:15 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3427824278034304277__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.8ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-28 00:10:16 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3427824278034304277__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-28 01:21:17 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3427824278034304277__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 16:20:35 +0000
+
+PG::ConnectionBad (could not translate host name "db" to address: Name or service not known
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2906523629750486319__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 16:31:23 +0000
+
+PG::ConnectionBad (could not translate host name "db" to address: Name or service not known
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__2906523629750486319__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.7ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 17:14:06 +0000
+
+PG::ConnectionBad (could not translate host name "db" to address: Name or service not known
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__769843575215753142__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.6ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 18:45:12 +0000
+
+PG::ConnectionBad (could not connect to server: No route to host
+	Is the server running on host "db" (172.17.0.2) and accepting
+	TCP/IP connections on port 5432?
+):
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:831:in `connect'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:548:in `initialize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:440:in `new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:450:in `checkout_new_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:421:in `acquire_connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:356:in `block in checkout'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `checkout'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/local/lib/ruby/2.2.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:546:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:79:in `retrieve_connection'
+  activerecord (4.0.2) lib/active_record/connection_handling.rb:53:in `connection'
+  activerecord (4.0.2) lib/active_record/migration.rb:792:in `current_version'
+  activerecord (4.0.2) lib/active_record/migration.rb:800:in `needs_migration?'
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__1218094242392893283__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (37.2ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 18:48:50 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3773873744094779148__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-28 22:13:38 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3014845578609638096__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 22:13:42 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3014845578609638096__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.2ms)
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 22:25:32 +0000
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.2) lib/active_record/migration.rb:379:in `check_pending!'
+  activerecord (4.0.2) lib/active_record/migration.rb:366:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__3014845578609638096__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lint.rb:49:in `_call'
+  rack (1.5.5) lib/rack/lint.rb:37:in `call'
+  rack (1.5.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.5.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.5.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.8ms)
+  [1m[36m (19.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (11.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateHighScores (20151010223630)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (28.9ms)[0m  [1mCREATE TABLE "high_scores" ("id" serial primary key, "game" character varying(255), "score" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20151010223630"]]
+  [1m[36m (1.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 192.168.99.1 at 2016-02-28 22:26:15 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (0.8ms)
+Completed 200 OK in 51ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-02-28 23:49:56 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.7ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 285ms (Views: 274.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-02-28 23:49:57 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-02-28 23:49:57 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-02-28 23:49:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-02-28 23:49:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-02-28 23:50:02 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-02-28 23:50:02 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-02-28 23:50:02 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-02-28 23:50:02 +0000
+
+
+Started GET "/" for 192.168.99.1 at 2016-05-05 22:43:07 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (15.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/bundle/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (5.3ms)
+Completed 200 OK in 157ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-05-05 22:43:16 +0000
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (21.6ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (23.3ms)
+Completed 200 OK in 252ms (Views: 220.7ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-05-05 22:43:17 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-05-05 22:43:17 +0000
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-05-05 22:43:17 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-05-05 22:43:18 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-05-05 22:43:18 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-05-05 22:43:18 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-05-05 22:43:18 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-05-05 22:43:18 +0000
+
+
+Started GET "/high_scores/new" for 192.168.99.1 at 2016-05-05 22:43:20 +0000
+Processing by HighScoresController#new as HTML
+  Rendered high_scores/_form.html.erb (246.6ms)
+  Rendered high_scores/new.html.erb within layouts/application (339.3ms)
+Completed 200 OK in 427ms (Views: 423.9ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/high_scores" for 192.168.99.1 at 2016-05-05 22:43:27 +0000
+Processing by HighScoresController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OTPVgJx6dpAXXpavoFZ+ogTGWSyXzdMxaCNVhfLLnso=", "high_score"=>{"game"=>"gfgdfgd", "score"=>"56"}, "commit"=>"Create High score"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (213.3ms)[0m  INSERT INTO "high_scores" ("created_at", "game", "score", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Thu, 05 May 2016 22:43:27 UTC +00:00], ["game", "gfgdfgd"], ["score", 56], ["updated_at", Thu, 05 May 2016 22:43:27 UTC +00:00]]
+  [1m[36m (40.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://dockerhost:3000/high_scores/1
+Completed 302 Found in 258ms (ActiveRecord: 253.7ms)
+
+
+Started GET "/high_scores/1" for 192.168.99.1 at 2016-05-05 22:43:28 +0000
+Processing by HighScoresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mHighScore Load (0.8ms)[0m  SELECT "high_scores".* FROM "high_scores" WHERE "high_scores"."id" = $1 LIMIT 1  [["id", "1"]]
+  Rendered high_scores/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 71.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/high_scores" for 192.168.99.1 at 2016-05-06 00:24:55 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HighScoresController#index as HTML
+  [1m[35mHighScore Load (0.7ms)[0m  SELECT "high_scores".* FROM "high_scores"
+  Rendered high_scores/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 360ms (Views: 333.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
+
+
+Started GET "/assets/high_scores.css?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
+
+
+Started GET "/assets/high_scores.js?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.99.1 at 2016-05-06 00:24:57 +0000
